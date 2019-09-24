@@ -37,8 +37,9 @@ class Scraper
   
   def print_courses
     self.make_courses
-    Course.all.each do ||
-      
+    Course.all.each do |course|
+      puts course 
+      binding.pry 
     end 
   end 
   
