@@ -28,7 +28,8 @@ class Scraper
   
   def make_courses
     self.get_courses.each do |course|
-      binding.pry 
+      c = Course.new 
+      c.title = course.css('h2').text 
     end 
   end 
   
