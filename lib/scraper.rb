@@ -1,5 +1,6 @@
 require 'nokogiri'
 require 'open-uri'
+require 'pry'
 
 require_relative './course.rb'
 
@@ -23,6 +24,7 @@ class Scraper
   
   def get_courses
     @doc.css('.post')
+    binding.pry 
   end 
   
 end
