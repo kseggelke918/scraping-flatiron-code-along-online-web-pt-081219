@@ -34,12 +34,8 @@ class Scraper
       c.description = course.css('p').text 
     end 
   end 
-  
-  
 end
 
-
-Scraper.print_courses
 
 
 
